@@ -1,0 +1,11 @@
+apiVersion: serverless.kyma-project.io/v1alpha2
+kind: Function
+metadata:
+  name: kubernetes-repo-func
+spec:
+  runtime: nodejs22
+  source:
+    gitRepository:
+      baseDir: func
+      reference: master
+      url: https://github.com/pPrecel/kubernetes.git
